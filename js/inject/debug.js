@@ -352,12 +352,12 @@ var inject = function () {
           }
           var angular = window.angular;
           popover = angular.element(
-            '<div style="position: fixed; left: 50px; top: 50px; z-index: 9999; background-color: #f1f1f1; color: #000; box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;">' +
+            '<div style="position: fixed; left: 50px; top: 50px; z-index: 9999; background-color: #f1f1f1; color: #000; box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; width: 300px;">' +
               '<div style="position: relative" style="min-width: 300px; min-height: 100px;">' +
                 '<div style="min-width: 100px; min-height: 50px; padding: 5px;"><pre>{ Please select a scope }</pre></div>' +
-                '<button style="position: absolute; top: -15px; left: -15px; cursor: move; color: #000000;">⇱</button>' +
-                '<button style="position: absolute; top: -15px; left: 10px; color: #000000">+</button>' +
-                '<button style="position: absolute; top: -15px; right: -15px; color: #000000">x</button>' +
+                '<button title="Move Panel" style="height: 24px; width: 100px; padding: 2px 6px 3px 6px; position: absolute; top: -24px; left: 0; cursor: move; color: #FFF; border-top-left-radius: 3px; background-color: #2980B9; border: none; font-size: 12px;"><i class="fa fa-arrows"></i> Move</button>' +
+                '<button title="Expand" style="height: 24px; width: 100px; padding: 2px 6px 3px 6px; position: absolute; top: -24px; left: 100px; color: #FFF; background-color: #27AE60; border: none; font-size: 12px;"><i class="fa fa-eyedropper"></i> Select Scope</button>' +
+                '<button title="Close" style="height: 24px; width: 100px; padding: 2px 6px 3px 6px; position: absolute; top: -24px; left: 200px; color: #FFF; border-top-right-radius: 3px; background-color: #C0392B; border: none; font-size: 12px;"><i class="fa fa-times"></i> Close</button>' +
                 '<style>' +
                   '.ng-scope.bat-selected { border: 1px solid red; } ' +
                   '.bat-indent { margin-left: 20px; }' +
