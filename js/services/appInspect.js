@@ -4,7 +4,7 @@ angular.module('panelApp').factory('appInspect', function (chromeExtension) {
     enable: function () {
       chromeExtension.eval(function (window) {
         var angular = window.angular;
-        var popover = angular.element('<div style="position: fixed; left: 10px; top: 10px; z-index: 9999; background-color: white; padding: 10px;"></div>');
+        var popover = angular.element('<div style="position: fixed; left: 10px; top: 10px; z-index: 9999; background-color: white; color: black; padding: 10px;"></div>');
         angular.element(window.document.body).append(popover);
         angular.element('.ng-scope').
           on('mouseover', function () {
