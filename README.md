@@ -1,12 +1,9 @@
-# AngularJS Batarang
-
-## Installing from the Web Store
-
-https://chrome.google.com/webstore/detail/ighdmehidhipcmcojjgiloacoafjmpfk
+# AngularJS Inspector
+## Based on [AngularJS Batarang](https://github.com/angular/angularjs-batarang)
 
 ## Installing from Source
 
-1.  Clone the repository: `git clone git://github.com/angular/angularjs-batarang`
+1.  Clone the repository: `git clone git@github.com:kkirsche/angularjs-batarang.git`
 2.  Navigate to `chrome://chrome/extensions/` and enable Developer Mode.
 3.  Choose "Load unpacked extension"
 4.  Open the directory you just cloned (should open with Chrome, otherwise try dragging/dropping the file into Chrome) and follow the prompts to install.
