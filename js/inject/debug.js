@@ -352,12 +352,12 @@ var inject = function () {
           }
           var angular = window.angular;
           popover = angular.element(
-            '<div style="position: fixed; left: 50px; top: 50px; z-index: 9999; background-color: #f1f1f1; box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;">' +
+            '<div style="position: fixed; left: 50px; top: 50px; z-index: 9999; background-color: #f1f1f1; color: #000; box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;">' +
               '<div style="position: relative" style="min-width: 300px; min-height: 100px;">' +
                 '<div style="min-width: 100px; min-height: 50px; padding: 5px;"><pre>{ Please select a scope }</pre></div>' +
-                '<button style="position: absolute; top: -15px; left: -15px; cursor: move;">⇱</button>' +
-                '<button style="position: absolute; top: -15px; left: 10px;">+</button>' +
-                '<button style="position: absolute; top: -15px; right: -15px;">x</button>' +
+                '<button style="position: absolute; top: -15px; left: -15px; cursor: move; color: #000000;">⇱</button>' +
+                '<button style="position: absolute; top: -15px; left: 10px; color: #000000">+</button>' +
+                '<button style="position: absolute; top: -15px; right: -15px; color: #000000">x</button>' +
                 '<style>' +
                   '.ng-scope.bat-selected { border: 1px solid red; } ' +
                   '.bat-indent { margin-left: 20px; }' +
