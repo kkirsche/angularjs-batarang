@@ -8,7 +8,7 @@ angular.module('panelApp').directive('batTabs', function ($compile, $templateCac
         '<div class="row-fluid">' +
           '<ul class="nav nav-tabs span12">' +
             '<li ng-repeat="pane in panes" ng-class="{active:pane.selected}">'+
-              '<a href="" ng-click="select(pane)">{{pane.title}}</a>' +
+              '<a href="" ng-click="select(pane)"><i class="fa {{pane.icon}}"></i> {{pane.title}}</a>' +
             '</li>' +
 
             '<li>' +
@@ -95,11 +95,13 @@ directive('batPane', function() {
     restrict: 'E',
     scope: {
       title: '@',
+      icon: '@',
       src: '@'
     },
     link: function (scope, element, attrs, tabsCtrl) {
       tabsCtrl.addPane({
         title: attrs.title,
+        icon: attrs.icon,
         src: attrs.src
       });
     }
