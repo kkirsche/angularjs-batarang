@@ -8,7 +8,7 @@ angular.module('panelApp').directive('batTabs', function ($compile, $templateCac
         '<div class="row-fluid">' +
           '<ul class="nav nav-tabs span12">' +
             '<li ng-repeat="pane in panes" ng-class="{active:pane.selected}">'+
-              '<a href="" ng-click="select(pane)"><i class="fa {{pane.icon}}"></i> {{pane.title}}</a>' +
+              '<a href="" ng-click="select(pane)"><i class="fa-bat {{pane.icon}}"></i> {{pane.title}}</a>' +
             '</li>' +
 
             '<li>' +
