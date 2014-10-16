@@ -27,11 +27,11 @@ angular.module('panelApp').controller('OptionsCtrl', function OptionsCtrl($scope
           break;
         case 'bad':
           $scope.status = 'important';
-          $scope.explain = 'You are using the old code.angularjs.org links, which are slow! You should switch to the new CDN link. See <a target="_blank" href="http://blog.angularjs.org/2012/07/angularjs-now-hosted-on-google-cdn.html">this post</a> for more info';
+          $scope.explain = 'You are using the old code.angularjs.org links, which are slow! You should switch to the new CDN link. See <a target="_blank" href="http://blog.angularjs.org/2012/07/angularjs-now-hosted-on-google-cdn.html" style="color: #FFDA47;">this post</a> for more info.';
           break;
         case 'info':
           $scope.status = 'info';
-          $scope.explain = 'You may want to use the CDN-hosted AngularJS files. See <a target="_blank" href="http://blog.angularjs.org/2012/07/angularjs-now-hosted-on-google-cdn.html">this post</a> for more info';
+          $scope.explain = 'You may want to use the CDN-hosted AngularJS files. See <a target="_blank" href="http://blog.angularjs.org/2012/07/angularjs-now-hosted-on-google-cdn.html" style="color: #FFDA47;">this post</a> for more info.';
           break;
       }
     });
